@@ -1,0 +1,16 @@
+@import './variables';
+@import './partials/_nav';
+
+body{
+  background-color: moccasin;
+}
+
+h2 {
+  color: blue
+}
+
+.jump-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

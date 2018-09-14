@@ -1,0 +1,18 @@
+nav{
+background-color: $primary-background-color;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li{
+    list-style: none;
+    padding: 5px;
+    height: 200px;
+    &:not(:last-child){
+      border-right: solid $primary-color 1px;
+    }
+  a{
+    text-decoration: none;
+  }
+  }
+}

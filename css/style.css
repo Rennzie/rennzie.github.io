@@ -1,0 +1,26 @@
+nav {
+  background-color: #eee; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; }
+  nav li {
+    list-style: none;
+    padding: 5px;
+    height: 200px; }
+    nav li:not(:last-child) {
+      border-right: solid #333 1px; }
+    nav li a {
+      text-decoration: none; }
+
+body {
+  background-color: moccasin; }
+
+h2 {
+  color: blue; }
+
+.jump-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+/*# sourceMappingURL=style.css.map */
