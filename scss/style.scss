@@ -1,9 +1,6 @@
 @import './variables';
 @import './partials/_nav';
-
-body{
-  background-color: moccasin;
-}
+@import './partials/_header';
 
 h2 {
   color: blue

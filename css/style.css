@@ -8,12 +8,16 @@ nav {
     padding: 5px;
     height: 200px; }
     nav li:not(:last-child) {
-      border-right: solid #333 1px; }
+      border-right: solid #cc7722 1px; }
     nav li a {
       text-decoration: none; }
 
-body {
-  background-color: moccasin; }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; }
 
 h2 {
   color: blue; }
