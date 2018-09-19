@@ -1,9 +1,16 @@
 @import './variables';
-@import './partials/_nav';
+@import './helpers';
 @import './partials/_header';
+@import './partials/_nav';
+@import './partials/_main';
+@import './partials/_footer';
 
-h2 {
-  color: blue
+@import './sections/_about-contact';
+
+
+body{
+  font-family: $primary-font;
+  font-size: $body-text-font-size;
 }
 
 .jump-to-top {

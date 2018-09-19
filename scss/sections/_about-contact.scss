@@ -1,0 +1,36 @@
+#about-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 33%;
+    height: 100%;
+  }
+
+  figure{
+    overflow: hidden;
+    border-radius: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+}

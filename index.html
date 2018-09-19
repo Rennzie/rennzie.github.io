@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sean Rennie | Portfolio</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sean Rennie | Portfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-  </head>
-  <body id="top">
-    <header>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body id="top">
+  <header>
+    <div class="white-transparent-50 nav-overlay ">
+      <div class="main-logo">
+        <img src="./assets/sr-logo-black-accented-withtag.svg" alt="logo for web page" />
+      </div>
+
       <nav>
         <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class='nav-button' ><a  href="#about-contact">PROFILE</a></li>
+          <li class='nav-button' ><a  href="#about-contact">CONTACT</a></li>
+          <li class='nav-button' ><a  href="#skills">SKILLS</a></li>
+          <li class='nav-button' ><a  href="#projects">PROJECTS</a></li>
+          <li class='nav-button' ><a  href="#skills">INTERESTS</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section id="about">
-      <h2>About me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+  <div class="main-wrapper">
+    <main>
 
-    <section id="projects">
-      <h2>These are my projects</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+      <section id="about-contact"  class='section-wrapper'>
 
-    <section id="skills">
-      <h2>These are my skills</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+        <div class="contact about-info-wrapper">
+          <h3 class="sub-title">Contact me at:</h3>
+          <a mailto='sean.rennie6@gmail.com'>sean.rennie6@gmail.com</a>
+        </div>
 
-    <section id="contact">
-      <h2>These are my contacts</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+        <figure class="main-profile-image about-info-wrapper">
+          <img src="assets/profile-picture-sean-small-sqr.jpg" alt="profile picture">
+        </figure>
 
-    <a class="jump-to-the-top" href="#top">Jump to Top</a>
+        <div class=" about-info-wrapper">
+          <h3 class="sub-title">Find me on:</h3>
+          <ul class="social-links" >
+            <li>GH</li>
+            <li>CW</li>
+            <li>Li</li>
+          </ul>
+        </div>
+      </section>
 
-  </body>
+      <section id="projects" class='section-wrapper'>
+        <h2 class='title'>These are my projects</h2>
+        <p>
+          Project 1: I used Trello to plan and track the project. Specifically focussing on the to do’s required to achieve an MVP and then to prioritise the additional features and polishing of the project. I also used it to tracks bugs.
+        </p>
+      </section>
+
+      <section id="skills" class='section-wrapper'>
+        <h2 class='title'>These are my skills</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section id="interests" class='section-wrapper'>
+        <h2 class='title'>These are my contacts</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <a class="jump-to-the-top" href="#top">Jump to Top</a>
+
+
+
+    </main>
+  </div>
+
+  <footer>
+    <h2>Made by Sean Rennie 💻</h2>
+  </footer>
+
+</body>
 </html>

@@ -1,18 +1,29 @@
 nav{
-background-color: $primary-background-color;
   ul{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
   }
-  li{
-    list-style: none;
-    padding: 5px;
-    height: 200px;
-    &:not(:last-child){
-      border-right: solid $primary-color 1px;
-    }
+}
+
+.nav-button{
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align:middle;
+  border: 1px solid black;
+  font-size: $buttons-links-font-size;
+  padding: 0.75rem 0;
+  width: 120px;
   a{
     text-decoration: none;
+    color: black;
   }
+  &:first-child{
+    border-radius: 1rem 0 0 1rem;
+  }
+  &:last-child{
+    border-radius: 0 1rem 1rem 0;
   }
 }
