@@ -4,6 +4,28 @@
 .white-transparent-50 {
   background-color: rgba(255, 255, 255, 0.5); }
 
+.info-para {
+  margin: 1rem 0;
+  width: 90%; }
+
+.first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  word-wrap: normal; }
+
+.tag {
+  display: inline;
+  width: 100%;
+  padding: 0.25rem;
+  margin: 0.25rem 0;
+  border: 1px solid 'dark grey';
+  background-color: lightgrey;
+  border-radius: 5%;
+  box-sizing: border-box; }
+
+.bold {
+  font-weight: bold; }
+
 header {
   height: 100vh;
   background-position: center;
@@ -56,7 +78,8 @@ nav ul {
 
 .section-wrapper {
   border-top: 1px solid #e3a857;
-  margin: 2rem 0; }
+  padding: 1rem 0;
+  margin: 1rem 0; }
 
 footer {
   background-color: black;
@@ -69,9 +92,17 @@ footer {
 
 #about-contact {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
-  #about-contact .about-info-wrapper {
+  #about-contact .contact-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%; }
+  #about-contact .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,6 +123,32 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center; }
+  #about-contact .bio-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; }
+
+#skills .skill-board {
+  display: flex;
+  align-items: flex-start; }
+  #skills .skill-board .list-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem; }
+  #skills .skill-board .list-end {
+    color: lightgrey;
+    margin-top: 0.5rem; }
+#skills .skill-level {
+  border-radius: 2.5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: auto;
+  padding: 0.5rem;
+  margin: 0.5rem 0.25rem;
+  border: 1px solid black;
+  background-color: grey; }
 
 body {
   font-family: "Open Sans";

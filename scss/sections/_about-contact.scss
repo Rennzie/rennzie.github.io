@@ -1,9 +1,19 @@
 #about-contact{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
-  .about-info-wrapper{
+  .contact-info-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .contact-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,4 +43,10 @@
       align-items: center;
   }
 
+  .bio-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
