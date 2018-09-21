@@ -35,12 +35,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    a{
+      margin: 0.5rem;
+    }
   }
 
+  a{
+    color: black;
+  }
   .social-links{
       display: flex;
       justify-content: center;
       align-items: center;
+      li{
+        margin: 0.5rem;
+
+      }
+      img{
+        height: 40px;
+        width: auto;
+      }
   }
 
   .bio-wrapper{

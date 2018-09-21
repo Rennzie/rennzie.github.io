@@ -6,6 +6,9 @@
   <title>Sean Rennie | Portfolio</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -41,7 +44,9 @@
 
           <div class="contact contact-info">
             <h3 class="sub-title">Contact me at:</h3>
-            <a mailto='sean.rennie6@gmail.com'>sean.rennie6@gmail.com</a>
+            <a href='mailto:sean.rennie6@gmail.com'>
+              <i class="fas fa-lg fa-envelope"></i>sean.rennie6@gmail.com
+            </a>
           </div>
 
           <figure class="main-profile-image contact-info">
@@ -51,9 +56,18 @@
           <div class="socials contact-info">
             <h3 class="sub-title">Find me on:</h3>
             <ul class="social-links" >
-              <li>GH</li>
-              <li>CW</li>
-              <li>Li</li>
+              <li class='tooltip'>
+                <a href="#"><i class="fab fa-3x fa-github-square"></i></a>
+                <span class="tooltiptext">Github</span>
+              </li>
+              <li class="tooltip">
+                <a href="#"> <img src="./assets/codewars.svg" alt=""> </a>
+                <span class="tooltiptext">CodeWars</span>
+              </li>
+              <li class='tooltip'>
+                <a href="#"><i class="fab fa-3x fa-linkedin"></i></a>
+                <span class="tooltiptext">LinkedIn</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -80,56 +94,56 @@
         <div class="skill-board">
           <ul class="skill-level">
             <li class="list-title">Non-Technical</li>
-            <li class="tag">Presentations</li>
-            <li class="tag">Management Experience</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card">Presentations</li>
+            <li class="card">Management Experience</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
             <li class="list-title">Proficient</li>
-            <li class="tag">HTML5</li>
-            <li class="tag">CSS3</li>
-            <li class="tag">Bulma</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card"><i class="fab fa-html5"></i>HTML5</li>
+            <li class="card"><i class="fab fa-css3"></i>CSS3</li>
+            <li class="card">Bulma</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
             <li class="list-title">Comfortable</li>
-            <li class="tag">JavaScript</li>
-            <li class="tag">React.js</li>
-            <li class="tag">JSX</li>
-            <li class="tag">Express.js</li>
-            <li class="tag">Mongoose</li>
-            <li class="tag">AngularJS</li>
-            <li class="tag">SASS (SCSS)</li>
-            <li class="tag">React Router DOM</li>
-            <li class="tag">JSON Web Token</li>
-            <li class="tag">jQuery</li>
-            <li class="tag">MongoDB</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card"><i class="fab fa-js-square"></i>JavaScript</li>
+            <li class="card"><i class="fab fa-react"></i>React.js</li>
+            <li class="card">JSX</li>
+            <li class="card"><i class="devicon-express-original"></i>Express.js</li>
+            <li class="card">Mongoose</li>
+            <li class="card"><i class="devicon-angularjs-plain"></i> AngularJS</li>
+            <li class="card"><i class="fab fa-sass"></i>SASS (SCSS)</li>
+            <li class="card">React Router DOM</li>
+            <li class="card">JSON Web Token</li>
+            <li class="card"><i class="devicon-jquery-plain"></i> jQuery</li>
+            <li class="card"><i class="devicon-mongodb-plain"></i> MongoDB</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
             <li class="list-title">Dabbled</li>
-            <li class="tag">Node.js</li>
-            <li class="tag">Mocha</li>
-            <li class="tag">Chai</li>
-            <li class="tag">lodash</li>
-            <li class="tag">Webpack</li>
-            <li class="tag">Sail.js</li>
-            <li class="tag">SQL</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card"><i class="fab fa-node-js"></i>Node.js</li>
+            <li class="card"> <i class="devicon-mocha-plain"></i>Mocha</li>
+            <li class="card">Chai</li>
+            <li class="card">lodash</li>
+            <li class="card"><i class="devicon-webpack-plain"></i>Webpack</li>
+            <li class="card">Sails.js</li>
+            <li class="card">SQL</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
             <li class="list-title">Keen to Try</li>
-            <li class="tag">Python</li>
-            <li class="tag">Webassembly</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card"><i class="fab fa-python"></i>Python</li>
+            <li class="card">WebAssembly</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
             <li class="list-title">Methologies</li>
-            <li class="tag">REST</li>
-            <li class="tag">MVC</li>
-            <li class="tag">TDD</li>
-            <li class="tag">Agile & daily standups</li>
-            <li class="list-end">+ Add another card</li>
+            <li class="card">REST</li>
+            <li class="card">MVC</li>
+            <li class="card">TDD</li>
+            <li class="card">Agile & daily standups</li>
+            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
         </div>
       </section>
