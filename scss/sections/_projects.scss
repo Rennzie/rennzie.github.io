@@ -1,9 +1,12 @@
 #projects{
+  // .title{
+  //   width: 50%;
+  //   text-align: center;
+  //   margin: auto;
+  // }
   .projects-info{
-    width: 50%;
+    width: 75%;
     margin: 0 auto 2rem auto;
-    text-align: center;
-
   }
 
   .project-section{
@@ -13,15 +16,12 @@
   .project-wrapper{
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
     text-decoration: none;
     color: black;
     padding: 1rem;
     box-sizing: border-box;
-    // border: 1px solid black;
-    // border-radius: 2.5%;
     box-shadow: 1px 1px 1px 0.5px rgba(175,186,194,0.76);
 
     .project-info{
@@ -34,9 +34,21 @@
       width: 75%;
       margin: 0 auto;
       height: auto;
-      // border-radius: 100%;
     }
-    &:hover{
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #projects{
+    .projects-info{
+      width: 90%;
+    }
+    .project-wrapper{
+      width: 100%;
+      img{
+        width: 100%;
+      }
     }
   }
 }

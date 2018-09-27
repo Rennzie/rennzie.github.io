@@ -1,6 +1,7 @@
 .title{
   font-size: $titles-1-font-size;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .sub-title{
@@ -14,8 +15,9 @@
 
 .info-para{
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.75rem auto;
   width: 90%;
+  line-height: 1.5rem;
 }
 
 .first-letter{
