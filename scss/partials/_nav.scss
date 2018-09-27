@@ -1,29 +1,44 @@
 nav{
+  width: 65%;
   ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
   }
 }
 
 .nav-button{
-  // display: flex;
   align-items: center;
   text-align: center;
   vertical-align:middle;
   border: 1px solid black;
   font-size: $buttons-links-font-size;
   padding: 0.75rem 0;
-  width: 120px;
-  a{
-    text-decoration: none;
-    color: black;
-  }
+  width: 20%;
+
   &:first-child{
     border-radius: 1rem 0 0 1rem;
   }
   &:last-child{
     border-radius: 0 1rem 1rem 0;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    ul{
+      flex-direction: column;
+    }
+  }
+  .nav-button{
+    width: 100%;
+    &:first-child{
+      border-radius: 0px;
+    }
+    &:last-child{
+      border-radius: 0px;
+    }
   }
 }

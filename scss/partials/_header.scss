@@ -1,27 +1,23 @@
 header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  // background-image: url('../assets/croatian-sunrise-20150707-01.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-
-  .nav-overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-  }
 
   .main-logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    height: 500px;
-    width: 700px;
-    // margin: 3rem;
+    width: 65%;
+    height: auto;
+  }
+}
+
+//Mobile
+@media (max-width: 600px) {
+  .main-logo{
+    min-width: 100%;
   }
 }

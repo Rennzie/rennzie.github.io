@@ -7,11 +7,17 @@
 
 @import './sections/_about-contact';
 @import './sections/_skills';
+@import './sections/_projects';
 
 
 body{
   font-family: $primary-font;
   font-size: $body-text-font-size;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 .jump-to-top {

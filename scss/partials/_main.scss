@@ -11,3 +11,10 @@
     padding: 1rem 0;
     margin: 1rem 0;
   }
+
+  @media screen and (max-width: 600px) {
+    .main-wrapper{
+      max-width: 100%;
+      // background-color: red;
+    }
+  }

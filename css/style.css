@@ -1,10 +1,16 @@
 .title {
-  font-size: 20px; }
+  font-size: 30px;
+  margin-bottom: 1rem; }
+
+.sub-title {
+  font-size: 20px;
+  margin-bottom: 0.5rem; }
 
 .white-transparent-50 {
   background-color: rgba(255, 255, 255, 0.5); }
 
 .info-para {
+  text-align: center;
   margin: 1rem 0;
   width: 90%; }
 
@@ -71,31 +77,28 @@ i {
   opacity: 1; }
 
 header {
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat; }
-  header .nav-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100vh;
-    width: 100vw; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
   header .main-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    height: 500px;
-    width: 700px; }
+    width: 65%;
+    height: auto; }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 700px; }
+@media (max-width: 600px) {
+  .main-logo {
+    min-width: 100%; } }
+nav {
+  width: 65%; }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .nav-button {
   align-items: center;
@@ -104,15 +107,24 @@ nav ul {
   border: 1px solid black;
   font-size: 16px;
   padding: 0.75rem 0;
-  width: 120px; }
-  .nav-button a {
-    text-decoration: none;
-    color: black; }
+  width: 20%; }
   .nav-button:first-child {
     border-radius: 1rem 0 0 1rem; }
   .nav-button:last-child {
     border-radius: 0 1rem 1rem 0; }
 
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%; }
+    nav ul {
+      flex-direction: column; }
+
+  .nav-button {
+    width: 100%; }
+    .nav-button:first-child {
+      border-radius: 0px; }
+    .nav-button:last-child {
+      border-radius: 0px; } }
 .main-wrapper {
   display: flex;
   justify-content: center;
@@ -125,6 +137,9 @@ nav ul {
   padding: 1rem 0;
   margin: 1rem 0; }
 
+@media screen and (max-width: 600px) {
+  .main-wrapper {
+    max-width: 100%; } }
 footer {
   background-color: black;
   color: white;
@@ -137,13 +152,12 @@ footer {
 #about-contact {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   #about-contact .contact-info-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 2rem;
     width: 100%; }
   #about-contact .contact-info {
@@ -182,19 +196,16 @@ footer {
     flex-direction: column;
     width: 100%; }
 
+@media screen and (max-width: 600px) {
+  .contact-info-wrapper {
+    flex-direction: column; } }
 #skills {
   background-color: #e3a857;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  margin-bottom: 0 !important; }
   #skills .skill-board {
     display: flex;
     align-items: flex-start; }
-    #skills .skill-board .list-title {
-      font-weight: bold;
-      margin-bottom: 0.5rem; }
-    #skills .skill-board .list-end {
-      font-size: 12px;
-      color: #6b808c;
-      margin-top: 0.5rem; }
   #skills .skill-level {
     border-radius: 0.25rem;
     box-sizing: border-box;
@@ -207,10 +218,47 @@ footer {
     padding: 0.5rem;
     margin: 0.5rem 0.25rem;
     background-color: #dfe3e6; }
+    #skills .skill-level .list-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem; }
+    #skills .skill-level .list-end {
+      font-size: 12px;
+      color: #6b808c;
+      margin-top: 0.5rem; }
+
+#projects .projects-info {
+  width: 50%;
+  margin: 0 auto 2rem auto;
+  text-align: center; }
+#projects .project-section {
+  display: flex;
+  flex-wrap: wrap; }
+#projects .project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 0.5px rgba(175, 186, 194, 0.76); }
+  #projects .project-wrapper .project-info {
+    margin: 1rem 0;
+    flex-grow: 1;
+    align-self: flex-start; }
+  #projects .project-wrapper img {
+    width: 75%;
+    margin: 0 auto;
+    height: auto; }
 
 body {
   font-family: "Open Sans";
-  font-size: 14px; }
+  font-size: 18px; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 .jump-to-top {
   position: fixed;

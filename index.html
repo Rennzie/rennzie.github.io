@@ -8,32 +8,26 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-
 </head>
+
 <body id="top">
   <header>
-    <div class="white-transparent-50 nav-overlay ">
-      <div class="main-logo">
-        <img src="./assets/sr-logo-black-accented-withtag.svg" alt="logo for web page" />
-      </div>
+    
+      <img class="main-logo" src="./assets/logos/sr-logo-black-accented-withtag.svg" alt="logo for web page" />
 
       <nav>
         <ul>
-          <li class='nav-button' ><a  href="#about-contact">PROFILE</a></li>
+          <li class='nav-button' ><a  href="#about-contact">ABOUT ME</a></li>
           <li class='nav-button' ><a  href="#about-contact">CONTACT</a></li>
           <li class='nav-button' ><a  href="#skills">SKILLS</a></li>
           <li class='nav-button' ><a  href="#projects">PROJECTS</a></li>
-          <li class='nav-button' ><a  href="#current">WHAT IM WORKING ON</a></li>
-          <li class='nav-button' ><a  href="#interests">INTERESTS</a></li>
+          <li class='nav-button' ><a  href="#current">CURRENT</a></li>
         </ul>
       </nav>
-    </div>
+
   </header>
 
   <div class="main-wrapper">
@@ -50,7 +44,7 @@
           </div>
 
           <figure class="main-profile-image contact-info">
-            <img src="assets/profile-picture-sean-small-sqr.jpg" alt="profile picture">
+            <img src="assets/images/profile-picture-sean-small-sqr.jpg" alt="profile picture">
           </figure>
 
           <div class="socials contact-info">
@@ -61,7 +55,7 @@
                 <span class="tooltiptext">Github</span>
               </li>
               <li class="tooltip">
-                <a href="#"> <img src="./assets/codewars.svg" alt=""> </a>
+                <a href="#"> <img src="./assets/logos/codewars.svg" alt=""> </a>
                 <span class="tooltiptext">CodeWars</span>
               </li>
               <li class='tooltip'>
@@ -87,7 +81,8 @@
       </section>
 
       <section id="skills" class='section-wrapper'>
-        <p><span class="sub-title bold">Skills</span> |
+        <p>
+          <span class="sub-title bold">Skills</span> |
           <span class="sub-title"> #portfolio-personal-boards |</span>
           <span class="sub-title"> Team Visible |</span>
         </p>
@@ -106,7 +101,7 @@
             <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
           </ul>
           <ul class="skill-level">
-            <li class="list-title">Comfortable</li>
+            <p class="list-title">Comfortable</p>
             <li class="card"><i class="fab fa-js-square"></i>JavaScript</li>
             <li class="card"><i class="fab fa-react"></i>React.js</li>
             <li class="card">JSX</li>
@@ -149,10 +144,38 @@
       </section>
 
       <section id="projects" class='section-wrapper'>
-        <h2 class='title'>These are my projects</h2>
-        <p>
-          Project 1: I used Trello to plan and track the project. Specifically focussing on the to do’s required to achieve an MVP and then to prioritise the additional features and polishing of the project. I also used it to tracks bugs.
-        </p>
+        <h2 class='title'>Projects</h2>
+        <p class="projects-info">Have a look at the four projects I completed while doing my 3 month web development immersive at General Assembly London. Click the card to view the README</p>
+
+        <div class="project-section">
+          <a target="_blank" href="https://github.com/rennzie/social-fitness-app-ga-wdi-prj4" class="project-wrapper">
+            <h3 class="sub-title">Project 4 | GRIT | Group of 3 | 8 days </h3>
+            <p class="project-info">A MERN stack social fitness app built for tribes.</p>
+            <img src="./assets/images/grit-dashboard-cropped-1200x1200.png" alt="">
+
+          </a>
+
+          <a target="_blank" href="https://github.com/rennzie/personal-tracking-app-ga-wdi-prj3" class="project-wrapper">
+            <h3 class="sub-title">Project 3 | Resolut | Group of 2 | 8 days </h3>
+            <p class="project-info">A MEAN stack personal development app for goal setting, tracking and accomplishing.</p>
+            <img src="./assets/images/resolute-cropped-1200x1200.png" alt="">
+
+          </a>
+
+          <a target="_blank" href="https://github.com/rennzie/geotourism-reviewpage-ga-wdi-prj2" class="project-wrapper">
+            <h3 class="sub-title">Project 2 | Nice Rocks | Individual | 7 days </h3>
+            <p class="project-info">An Express.js full stack server side web app for reviewing geotourism spot.</p>
+            <img src="./assets/images/nice-rocks-show-page-cropped-1200x1200.png" alt="">
+
+          </a>
+
+          <a target="_blank" href="https://github.com/rennzie/two-person-shooter-game-ga-wdi-prj1" class="project-wrapper">
+            <h3 class="sub-title">Project 1 | Battle Command | Individual | 7 Days</h3>
+            <p class="project-info">A vanilla JavaScript built 2D browser hosted game.</p>
+            <img src="./assets/images/battle-command-board-cropped-1200x1200.png" alt="">
+          </a>
+        </div>
+
       </section>
 
 
@@ -163,16 +186,7 @@
         </p>
       </section>
 
-      <section id="interests" class='section-wrapper'>
-        <h2 class='title'>Im not a robot!</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </section>
-
       <a class="jump-to-the-top" href="#top">Jump to Top</a>
-
-
 
     </main>
   </div>
