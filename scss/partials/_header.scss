@@ -16,7 +16,7 @@ header{
 }
 
 //Mobile
-@media (max-width: 600px) {
+@media screen and (max-width: $touch-max-width) {
   .main-logo{
     min-width: 100%;
   }

@@ -11,8 +11,9 @@ nav{
   align-items: center;
   text-align: center;
   vertical-align:middle;
+  box-sizing: border-box;
   border: 1px solid black;
-  font-size: $buttons-links-font-size;
+  font-size: $header-buttons;
   padding: 0.75rem 0;
   width: 20%;
 
@@ -25,7 +26,7 @@ nav{
 }
 
 // Mobile
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-max-width) {
   nav {
     width: 100%;
     ul{

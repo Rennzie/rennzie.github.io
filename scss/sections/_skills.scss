@@ -6,16 +6,13 @@
     align-items: flex-start;
     width: 100%;
   }
-  .skill-level{
-    display: flex;
-    flex-direction: column;
+  .list{
     width: 16%;
     max-width: 16%;
     max-height: 260px;
     height: auto;
     box-sizing: border-box;
     border-radius: 0.25rem;
-    overflow: scroll;
     background-color: rgb(223, 227, 230);
     margin: 0.5rem 0.25rem;
     padding: 0.5rem;
@@ -24,21 +21,33 @@
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
-    .list-end{
-      font-size: 12px;
-      color: rgb(107, 128, 140);
-      margin-top: 0.5rem;
+
+    .skill-level{
+      // overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      max-height: 220px;
+      .list-end{
+        font-size: 12px;
+        color: rgb(107, 128, 140);
+        margin-top: 0.5rem;
+      }
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .skill-level{
-    min-width: 65%;
+@media screen and (max-width: $touch-max-width) {
+  .list{
+    min-width: 25%;
   }
   .skill-board{
     overflow-x: scroll;
-
   }
+}
 
+@media screen and (max-width: $mobile-max-width) {
+  .list{
+    min-width: 45%;
+  }
 }

@@ -1,9 +1,4 @@
 #projects{
-  // .title{
-  //   width: 50%;
-  //   text-align: center;
-  //   margin: auto;
-  // }
   .projects-info{
     width: 75%;
     margin: 0 auto 2rem auto;
@@ -25,9 +20,10 @@
     box-shadow: 1px 1px 1px 0.5px rgba(175,186,194,0.76);
 
     .project-info{
-      margin: 1rem 0;
       flex-grow: 1;
       align-self: flex-start;
+      margin: 1rem 0;
+      line-height: 1.5rem;
     }
 
     img{
@@ -39,7 +35,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $touch-max-width) {
   #projects{
     .projects-info{
       width: 90%;

@@ -1,14 +1,24 @@
+//Colors
 $primary-color: #e3a857;
 $primary-background-color: #eee;
 
-
-
 //font sizing
-$titles-1-font-size: 30px;
-$titles-2-font-size: 20px;
-$sub-title-1-font-size: 18px;
-$body-text-font-size: 18px;
+$titles-1-font-size: 48px;
+$titles-2-font-size: 34px;
+$sub-title-1-font-size: 24px;
+$sub-title-2-font-size: 20px;
+
+$header-buttons: 18px;
+$text-heavy-font-size: 18px;
+$interactive-font-size: 16px;
+$less-important-font-size: 14px;
 $buttons-links-font-size: 16px;
 
 //font families
 $primary-font: 'Open Sans';
+
+// Responsive helpers
+
+$touch-max-width: 800px;
+
+$mobile-max-width: 600px;

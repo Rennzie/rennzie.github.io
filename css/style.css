@@ -1,11 +1,24 @@
 .title {
-  font-size: 30px;
+  font-size: 48px;
   margin-bottom: 1rem;
   text-align: center; }
 
+.title-2 {
+  font-size: 34px;
+  margin-bottom: 0.5rem; }
+
 .sub-title {
+  font-size: 24px;
+  margin-bottom: 0.5rem; }
+
+.sub-title-2 {
   font-size: 20px;
   margin-bottom: 0.5rem; }
+
+.captionesc {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.15rem; }
 
 .white-transparent-50 {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -17,9 +30,12 @@
   line-height: 1.5rem; }
 
 .first-letter {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: bold;
   word-wrap: normal; }
+
+.no-mobile {
+  display: none; }
 
 .card {
   display: inline;
@@ -92,7 +108,7 @@ header {
     width: 65%;
     height: auto; }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .main-logo {
     min-width: 100%; } }
 nav {
@@ -106,8 +122,9 @@ nav {
   align-items: center;
   text-align: center;
   vertical-align: middle;
+  box-sizing: border-box;
   border: 1px solid black;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0.75rem 0;
   width: 20%; }
   .nav-button:first-child {
@@ -141,7 +158,7 @@ main {
   padding: 1rem 0;
   margin: 1rem auto; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section-wrapper {
     width: 100%; } }
 footer {
@@ -200,9 +217,16 @@ footer {
     flex-direction: column;
     width: 100%; }
 
+@media screen and (max-width: 800px) {
+  #about-contact .contact-info-wrapper {
+    flex-direction: column; }
+  #about-contact .contact-info {
+    width: 100%; }
+  #about-contact figure {
+    max-width: 50%; } }
 @media screen and (max-width: 600px) {
-  .contact-info-wrapper {
-    flex-direction: column; } }
+  #about-contact figure {
+    max-width: 75%; } }
 #skills {
   background-color: #e3a857;
   padding: 0.5rem; }
@@ -210,33 +234,38 @@ footer {
     display: flex;
     align-items: flex-start;
     width: 100%; }
-  #skills .skill-level {
-    display: flex;
-    flex-direction: column;
+  #skills .list {
     width: 16%;
     max-width: 16%;
     max-height: 260px;
     height: auto;
     box-sizing: border-box;
     border-radius: 0.25rem;
-    overflow: scroll;
     background-color: #dfe3e6;
     margin: 0.5rem 0.25rem;
     padding: 0.5rem; }
-    #skills .skill-level .list-title {
+    #skills .list .list-title {
       font-weight: bold;
       margin-bottom: 0.5rem; }
-    #skills .skill-level .list-end {
-      font-size: 12px;
-      color: #6b808c;
-      margin-top: 0.5rem; }
+    #skills .list .skill-level {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      max-height: 220px; }
+      #skills .list .skill-level .list-end {
+        font-size: 12px;
+        color: #6b808c;
+        margin-top: 0.5rem; }
 
-@media screen and (max-width: 600px) {
-  .skill-level {
-    min-width: 65%; }
+@media screen and (max-width: 800px) {
+  .list {
+    min-width: 25%; }
 
   .skill-board {
     overflow-x: scroll; } }
+@media screen and (max-width: 600px) {
+  .list {
+    min-width: 45%; } }
 #projects .projects-info {
   width: 75%;
   margin: 0 auto 2rem auto; }
@@ -254,15 +283,16 @@ footer {
   box-sizing: border-box;
   box-shadow: 1px 1px 1px 0.5px rgba(175, 186, 194, 0.76); }
   #projects .project-wrapper .project-info {
-    margin: 1rem 0;
     flex-grow: 1;
-    align-self: flex-start; }
+    align-self: flex-start;
+    margin: 1rem 0;
+    line-height: 1.5rem; }
   #projects .project-wrapper img {
     width: 75%;
     margin: 0 auto;
     height: auto; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #projects .projects-info {
     width: 90%; }
   #projects .project-wrapper {

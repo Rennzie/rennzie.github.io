@@ -4,9 +4,25 @@
   text-align: center;
 }
 
-.sub-title{
+.title-2{
   font-size: $titles-2-font-size;
   margin-bottom: 0.5rem;
+}
+
+.sub-title{
+  font-size: $sub-title-1-font-size;
+  margin-bottom: 0.5rem;
+}
+
+.sub-title-2{
+  font-size: $sub-title-2-font-size;
+  margin-bottom: 0.5rem;
+}
+
+.captionesc{
+  font-size: $less-important-font-size;
+  margin-bottom: 0.5rem;
+  line-height: 1.15rem;
 }
 
 .white-transparent-50{
@@ -24,6 +40,10 @@
   font-size: $titles-1-font-size;
   font-weight: bold;
   word-wrap: normal;
+}
+
+.no-mobile{
+  display: none;
 }
 
 .card{
