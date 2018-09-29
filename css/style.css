@@ -34,9 +34,9 @@
   font-weight: bold;
   word-wrap: normal; }
 
-.no-mobile {
-  display: none; }
-
+@media screen and (max-width: 800px) {
+  .no-mobile {
+    display: none; } }
 .card {
   display: inline;
   width: 100%;
@@ -299,6 +299,20 @@ footer {
     width: 100%; }
     #projects .project-wrapper img {
       width: 100%; } }
+#current ul {
+  list-style: disc; }
+  #current ul li {
+    margin: 1rem 0; }
+    #current ul li a {
+      text-decoration: underline; }
+
+#education ul {
+  list-style: disc; }
+  #education ul li {
+    margin: 1rem 0; }
+    #education ul li a {
+      text-decoration: underline; }
+
 body {
   font-family: "Open Sans";
   font-size: 18px; }

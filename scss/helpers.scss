@@ -42,9 +42,12 @@
   word-wrap: normal;
 }
 
-.no-mobile{
-  display: none;
+@media screen and (max-width: $touch-max-width) {
+  .no-mobile{
+    display: none;
+  }
 }
+
 
 .card{
   display: inline;
