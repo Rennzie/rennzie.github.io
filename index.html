@@ -1,227 +1,367 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sean Rennie | Portfolio</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sean Rennie | Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body id="top">
-  <header>
+  <body id="top">
+    <header>
+      <img
+        class="main-logo"
+        src="./assets/logos/sr-logo-black-accented-withtag.svg"
+        alt="logo for web page"
+      />
 
-    <img class="main-logo" src="./assets/logos/sr-logo-black-accented-withtag.svg" alt="logo for web page" />
+      <nav>
+        <ul>
+          <li class="nav-button"><a href="#about-contact">ABOUT ME</a></li>
+          <li class="nav-button"><a href="#about-contact">CONTACT</a></li>
+          <li class="nav-button"><a href="#skills">SKILLS</a></li>
+          <li class="nav-button"><a href="#projects">PROJECTS</a></li>
+          <li class="nav-button"><a href="#current">CURRENT</a></li>
+          <li class="nav-button"><a href="#education">EDUCATION</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
-      <ul>
-        <li class='nav-button' ><a  href="#about-contact">ABOUT ME</a></li>
-        <li class='nav-button' ><a  href="#about-contact">CONTACT</a></li>
-        <li class='nav-button' ><a  href="#skills">SKILLS</a></li>
-        <li class='nav-button' ><a  href="#projects">PROJECTS</a></li>
-        <li class='nav-button' ><a  href="#current">CURRENT</a></li>
-        <li class='nav-button' ><a  href="#education">EDUCATION</a></li>
-      </ul>
-    </nav>
+    <main>
+      <section id="about-contact" class="section-wrapper">
+        <div class="contact-info-wrapper">
+          <div class="contact contact-info">
+            <h6 class="captionesc">Contact me at:</h6>
+            <a href="mailto:sean.rennie6@gmail.com">
+              <i class="fas fa-lg fa-envelope"></i>sean.rennie6@gmail.com
+            </a>
+          </div>
 
-  </header>
+          <figure class="main-profile-image contact-info">
+            <img
+              src="assets/images/profile-picture-sean-small-sqr.jpg"
+              alt="profile picture"
+            />
+          </figure>
 
-  <main>
-    <section id="about-contact"  class='section-wrapper'>
-      <div class="contact-info-wrapper">
+          <div class="socials contact-info">
+            <h6 class="captionesc">Find me on:</h6>
+            <ul class="social-links">
+              <li class="tooltip">
+                <a href="https://github.com/Rennzie" target="_blank"
+                  ><i class="fab fa-3x fa-github-square"></i
+                ></a>
+                <span class="tooltiptext">Github</span>
+              </li>
+              <li class="tooltip">
+                <a
+                  href="https://www.codewars.com/users/Rennzie"
+                  target="_blank"
+                >
+                  <img src="./assets/logos/codewars.svg" alt="" />
+                </a>
+                <span class="tooltiptext">CodeWars</span>
+              </li>
+              <li class="tooltip">
+                <a
+                  href="https://www.linkedin.com/in/sean-rennie6/"
+                  target="_blank"
+                  ><i class="fab fa-3x fa-linkedin"></i
+                ></a>
+                <span class="tooltiptext">LinkedIn</span>
+              </li>
+              <li class="tooltip">
+                <a
+                  href="https://stackoverflow.com/users/10132568/rennzie"
+                  target="_blank"
+                  ><i class="fab fa-3x fa-stack-overflow"></i
+                ></a>
+                <span class="tooltiptext">Stack Overflow</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="contact contact-info">
-          <h6 class="captionesc">Contact me at:</h6>
-          <a href='mailto:sean.rennie6@gmail.com'>
-            <i class="fas fa-lg fa-envelope"></i>sean.rennie6@gmail.com
+        <div class="bio-wrapper">
+          <p class="info-para sub-title">Hi, I'm Sean!</p>
+
+          <p class="info-para">
+            <span class="first-letter">I</span> was a field based exploration
+            geologist in West Africa for five years before I decided to pursue a
+            full-time career in the digital space. I’ve always loved to build
+            things, and the opportunities to build through coding and
+            web-development are endless.
+          </p>
+          <p class="info-para">
+            Working in exploration has given me a unique skillset to solve
+            complex problems with incomplete information. This positions me well
+            to take on the multi-faceted challenges of the online world.
+          </p>
+
+          <p class="info-para">
+            I began my coding journey teaching myself online through Codecademy
+            and after a month I was hooked. I then challenged myself even
+            further, diving into General Assembly’s three month web development
+            immersive!
+          </p>
+
+          <p class="info-para">
+            Did I mention I love to build things? Im not trying to build the
+            "intersection of techonology and humanity". I like building tools
+            that make peoples' lives better, not ones that draw them in, keep
+            them there and waste their time!
+          </p>
+
+          <p class="info-para">
+            Right now I want to work with a values-driven team to share and
+            solidify my learnings from GA and cut my teeth in a production
+            environment.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section-wrapper">
+        <h2>
+          <span class="sub-title">Skills</span> |
+          <span class="sub-title no-mobile"> #portfolio-personal-boards |</span>
+          <span class="sub-title no-mobile"> Team Visible |</span>
+        </h2>
+        <div class="skill-board">
+          <div class="list">
+            <p class="list-title">Non-Technical</p>
+            <ul class="skill-level">
+              <li class="card captionesc">Presentations</li>
+              <li class="card captionesc">Management Experience</li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <p class="list-title">Proficient</p>
+            <ul class="skill-level">
+              <li class="card captionesc"><i class="fab fa-html5"></i>HTML5</li>
+              <li class="card captionesc"><i class="fab fa-css3"></i>CSS3</li>
+              <li class="card captionesc">Bulma</li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <p class="list-title">Comfortable</p>
+            <ul class="skill-level">
+              <li class="card captionesc">
+                <i class="fab fa-js-square"></i>JavaScript
+              </li>
+              <li class="card captionesc">
+                <i class="fab fa-react"></i>React.js
+              </li>
+              <li class="card captionesc">JSX</li>
+              <li class="card captionesc">
+                <i class="devicon-express-original"></i>Express.js
+              </li>
+              <li class="card captionesc">Mongoose</li>
+              <li class="card captionesc">
+                <i class="devicon-angularjs-plain"></i> AngularJS
+              </li>
+              <li class="card captionesc">
+                <i class="fab fa-sass"></i>SASS (SCSS)
+              </li>
+              <li class="card captionesc">React Router DOM</li>
+              <li class="card captionesc">JSON Web Token</li>
+              <li class="card captionesc">
+                <i class="devicon-jquery-plain"></i> jQuery
+              </li>
+              <li class="card captionesc">
+                <i class="devicon-mongodb-plain"></i> MongoDB
+              </li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <p class="list-title">Dabbled</p>
+            <ul class="skill-level">
+              <li class="card captionesc">
+                <i class="fab fa-node-js"></i>Node.js
+              </li>
+              <li class="card captionesc">
+                <i class="devicon-mocha-plain"></i>Mocha
+              </li>
+              <li class="card captionesc">Chai</li>
+              <li class="card captionesc">lodash</li>
+              <li class="card captionesc">
+                <i class="devicon-webpack-plain"></i>Webpack
+              </li>
+              <li class="card captionesc">Sails.js</li>
+              <li class="card captionesc">SQL</li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <p class="list-title">Keen to Try</p>
+            <ul class="skill-level">
+              <li class="card captionesc">
+                <i class="fab fa-python"></i>Python
+              </li>
+              <li class="card captionesc">WebAssembly</li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <p class="list-title">Methologies</p>
+            <ul class="skill-level">
+              <li class="card captionesc">REST</li>
+              <li class="card captionesc">MVC</li>
+              <li class="card captionesc">TDD</li>
+              <li class="card captionesc">Agile & daily standups</li>
+              <li class="list-end">
+                <i class="fas fa-plus"></i> Add another card
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-wrapper">
+        <h2 class="title">Projects</h2>
+        <p class="projects-info info-para">
+          Have a look at the four projects I completed while doing my 3 month
+          web development immersive at General Assembly London. Click the card
+          to view the README on GitHub.
+        </p>
+
+        <div class="project-section">
+          <a
+            id="primary-project"
+            target="_blank"
+            href="https://github.com/rennzie/social-fitness-app-ga-wdi-prj4"
+            class="project-wrapper"
+          >
+            <h4 class="sub-title-2">GRIT - final project</h4>
+            <p class="project-info">
+              A MERN stack social fitness app built for tribes.
+            </p>
+            <img
+              src="./assets/images/grit-dashboard-cropped-1200x1200.png"
+              alt=""
+            />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://github.com/rennzie/personal-tracking-app-ga-wdi-prj3"
+            class="project-wrapper"
+          >
+            <h4 class="sub-title-2">Resolut</h4>
+            <p class="project-info">
+              A MEAN stack personal development app for goal setting, tracking
+              and accomplishing.
+            </p>
+            <img src="./assets/images/resolute-cropped-1200x1200.png" alt="" />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://github.com/rennzie/geotourism-reviewpage-ga-wdi-prj2"
+            class="project-wrapper"
+          >
+            <h4 class="sub-title-2">Nice Rocks</h4>
+            <p class="project-info">
+              An Express.js full stack server side web app for reviewing
+              geotourism spot.
+            </p>
+            <img
+              src="./assets/images/nice-rocks-show-page-cropped-1200x1200.png"
+              alt=""
+            />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://github.com/rennzie/two-person-shooter-game-ga-wdi-prj1"
+            class="project-wrapper"
+          >
+            <h4 class="sub-title-2">Battle Command</h4>
+            <p class="project-info">
+              A vanilla JavaScript built 2D browser hosted game.
+            </p>
+            <img
+              src="./assets/images/battle-command-board-cropped-1200x1200.png"
+              alt=""
+            />
           </a>
         </div>
+      </section>
 
-        <figure class="main-profile-image contact-info">
-          <img src="assets/images/profile-picture-sean-small-sqr.jpg" alt="profile picture">
-        </figure>
+      <section id="current" class="section-wrapper">
+        <h2 class="title">Currently Im working on:</h2>
+        <ul>
+          <li>
+            Learning computer science basics and python through the Codecademy
+            <a
+              target="_blank"
+              href="https://www.codecademy.com/pro/intensive/computer-science-with-python-data-structures"
+              >'Datastuctures Intensive'</a
+            >
+          </li>
+          <li>
+            Prototyping a livestock management app for farmers in South Africa
+          </li>
+        </ul>
+      </section>
 
-        <div class="socials contact-info">
-          <h6 class="captionesc">Find me on:</h6>
-          <ul class="social-links" >
-            <li class='tooltip'>
-              <a href="#"><i class="fab fa-3x fa-github-square"></i></a>
-              <span class="tooltiptext">Github</span>
-            </li>
-            <li class="tooltip">
-              <a href="#"> <img src="./assets/logos/codewars.svg" alt=""> </a>
-              <span class="tooltiptext">CodeWars</span>
-            </li>
-            <li class='tooltip'>
-              <a href="#"><i class="fab fa-3x fa-linkedin"></i></a>
-              <span class="tooltiptext">LinkedIn</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <section id="education" class="section-wrapper">
+        <h2 class="title">How I learned to code</h2>
+        <ul>
+          <li>
+            June 2018 - September 2018: 3 month
+            <a
+              href="https://generalassemb.ly/education/web-development-immersive?where=online"
+              >Web Development Immersive</a
+            >, General Assembly, London
+          </li>
+          <li>
+            November 2017 - January 2018: Codecademy,
+            <a href="https://www.credential.net/jvduv6ox"
+              >Build Websites from Scratch</a
+            >
+            10 week intensive
+          </li>
+          <li>
+            Februaru 2018 - April 2018: Codecademy,
+            <a href="https://www.credential.net/jvduv6ox"
+              >Build Front Ent Web Apps from Scratch</a
+            >
+            8 week intensive
+          </li>
+        </ul>
+      </section>
+    </main>
 
-      <div class="bio-wrapper">
-        <p class="info-para sub-title">Hi, I'm Sean!</p>
-
-        <p class="info-para"> <span class="first-letter">I</span> was a field based exploration geologist in West Africa for five years before I decided to pursue
-          a full-time career in the digital space. I’ve always loved to build things, and the opportunities to build through coding and web-development are endless.
-        </p>
-        <p class="info-para">Working in exploration has given me a unique skillset to solve complex problems with incomplete information. This positions me well to take on the multi-faceted challenges of the online world. </p>
-
-        <p class="info-para">I began my coding journey teaching myself online through Codecademy and after a month I was hooked. I then challenged myself even further, diving into General Assembly’s three month web development immersive!
-        </p>
-
-        <p class="info-para">Did I mention I love to build things? Im not trying to build the "intersection of techonology and humanity". I like building tools that make peoples' lives better, not ones that draw them in, keep them there and waste their time!</p>
-
-        <p class="info-para">Right now I want to work with a values-driven team to share and solidify my learnings from GA and cut my teeth in a production environment.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills" class='section-wrapper'>
-      <h2>
-        <span class="sub-title">Skills</span> |
-        <span class="sub-title no-mobile"> #portfolio-personal-boards |</span>
-        <span class="sub-title no-mobile"> Team Visible |</span>
-      </h2>
-      <div class="skill-board">
-        <div class="list">
-          <p class="list-title">Non-Technical</p>
-          <ul class="skill-level">
-            <li class="card captionesc">Presentations</li>
-            <li class="card captionesc">Management Experience</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-        <div class="list">
-          <p class="list-title">Proficient</p>
-          <ul class="skill-level">
-            <li class="card captionesc"><i class="fab fa-html5"></i>HTML5</li>
-            <li class="card captionesc"><i class="fab fa-css3"></i>CSS3</li>
-            <li class="card captionesc">Bulma</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-        <div class="list">
-          <p class="list-title">Comfortable</p>
-          <ul class="skill-level">
-            <li class="card captionesc"><i class="fab fa-js-square"></i>JavaScript</li>
-            <li class="card captionesc"><i class="fab fa-react"></i>React.js</li>
-            <li class="card captionesc">JSX</li>
-            <li class="card captionesc"><i class="devicon-express-original"></i>Express.js</li>
-            <li class="card captionesc">Mongoose</li>
-            <li class="card captionesc"><i class="devicon-angularjs-plain"></i> AngularJS</li>
-            <li class="card captionesc"><i class="fab fa-sass"></i>SASS (SCSS)</li>
-            <li class="card captionesc">React Router DOM</li>
-            <li class="card captionesc">JSON Web Token</li>
-            <li class="card captionesc"><i class="devicon-jquery-plain"></i> jQuery</li>
-            <li class="card captionesc"><i class="devicon-mongodb-plain"></i> MongoDB</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-        <div class="list">
-          <p class="list-title">Dabbled</p>
-          <ul class="skill-level">
-            <li class="card captionesc"><i class="fab fa-node-js"></i>Node.js</li>
-            <li class="card captionesc"> <i class="devicon-mocha-plain"></i>Mocha</li>
-            <li class="card captionesc">Chai</li>
-            <li class="card captionesc">lodash</li>
-            <li class="card captionesc"><i class="devicon-webpack-plain"></i>Webpack</li>
-            <li class="card captionesc">Sails.js</li>
-            <li class="card captionesc">SQL</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-        <div class="list">
-          <p class="list-title">Keen to Try</p>
-          <ul class="skill-level">
-            <li class="card captionesc"><i class="fab fa-python"></i>Python</li>
-            <li class="card captionesc">WebAssembly</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-        <div class="list">
-          <p class="list-title">Methologies</p>
-          <ul class="skill-level">
-            <li class="card captionesc">REST</li>
-            <li class="card captionesc">MVC</li>
-            <li class="card captionesc">TDD</li>
-            <li class="card captionesc">Agile & daily standups</li>
-            <li class="list-end"><i class="fas fa-plus"></i> Add another card</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class='section-wrapper'>
-      <h2 class='title'>Projects</h2>
-      <p class="projects-info info-para">Have a look at the four projects I completed while doing my 3 month web development immersive at General Assembly London. Click the card to view the README on GitHub.</p>
-
-      <div class="project-section">
-        <a id="primary-project" target="_blank" href="https://github.com/rennzie/social-fitness-app-ga-wdi-prj4" class="project-wrapper">
-          <h4 class="sub-title-2">GRIT - final project </h4>
-          <p class="project-info">A MERN stack social fitness app built for tribes.</p>
-          <img src="./assets/images/grit-dashboard-cropped-1200x1200.png" alt="">
-
-        </a>
-
-        <a target="_blank" href="https://github.com/rennzie/personal-tracking-app-ga-wdi-prj3" class="project-wrapper">
-          <h4 class="sub-title-2">Resolut</h4>
-          <p class="project-info">A MEAN stack personal development app for goal setting, tracking and accomplishing.</p>
-          <img src="./assets/images/resolute-cropped-1200x1200.png" alt="">
-
-        </a>
-
-        <a target="_blank" href="https://github.com/rennzie/geotourism-reviewpage-ga-wdi-prj2" class="project-wrapper">
-          <h4 class="sub-title-2">Nice Rocks </h4>
-          <p class="project-info">An Express.js full stack server side web app for reviewing geotourism spot.</p>
-          <img src="./assets/images/nice-rocks-show-page-cropped-1200x1200.png" alt="">
-
-        </a>
-
-        <a target="_blank" href="https://github.com/rennzie/two-person-shooter-game-ga-wdi-prj1" class="project-wrapper">
-          <h4 class="sub-title-2">Battle Command</h4>
-          <p class="project-info">A vanilla JavaScript built 2D browser hosted game.</p>
-          <img src="./assets/images/battle-command-board-cropped-1200x1200.png" alt="">
-        </a>
-      </div>
-
-    </section>
-
-    <section id="current" class='section-wrapper'>
-      <h2 class='title'>Currently Im working on:</h2>
-      <ul>
-        <li>Learning computer science basics and python through the Codecademy
-            <a target="_blank" href="https://www.codecademy.com/pro/intensive/computer-science-with-python-data-structures">'Datastuctures Intensive'</a>
-        </li>
-        <li>Prototyping a livestock management app for farmers in South Africa</li>
-      </ul>
-    </section>
-
-    <section id="education" class='section-wrapper'>
-      <h2 class='title'>How I learned to code</h2>
-      <ul>
-        <li>June 2018 - September 2018: 3 month
-          <a href="https://generalassemb.ly/education/web-development-immersive?where=online">Web Development Immersive</a>, General Assembly, London
-        </li>
-        <li>November 2017 - January 2018: Codecademy,
-          <a href="https://www.credential.net/jvduv6ox">Build Websites from Scratch</a> 10 week intensive
-        </li>
-        <li>Februaru 2018 - April 2018: Codecademy,
-          <a href="https://www.credential.net/jvduv6ox">Build Front Ent Web Apps from Scratch</a> 8 week intensive
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <h2>Made by Sean Rennie 💻</h2>
-  </footer>
-
-</body>
+    <footer><h2>Made by Sean Rennie 💻</h2></footer>
+  </body>
 </html>
