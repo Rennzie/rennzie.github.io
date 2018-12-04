@@ -42,7 +42,7 @@
   width: 100%;
   padding: 0.25rem;
   margin: 0.25rem 0;
-  border: 1px solid 'dark grey';
+  border: 1px solid "dark grey";
   background-color: white;
   box-shadow: 1px 1px 1px 0px rgba(175, 186, 194, 0.76);
   border-radius: 0.25rem;
@@ -153,6 +153,13 @@ main {
 
 .section-wrapper {
   width: 1060px;
+  box-sizing: border-box;
+  border-top: 1px solid #e3a857;
+  padding: 1rem 0;
+  margin: 1rem auto; }
+
+.section-wrapper-wide {
+  width: 96vw;
   box-sizing: border-box;
   border-top: 1px solid #e3a857;
   padding: 1rem 0;
@@ -323,6 +330,67 @@ footer {
     margin: 1rem 0; }
     #education ul li a {
       text-decoration: underline; }
+
+.timeline {
+  margin-top: 5%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.timeline-box {
+  height: 150px;
+  width: 100%; }
+  .timeline-box .timeline-box-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66%;
+    width: 100%;
+    padding: 0 4%; }
+    .timeline-box .timeline-box-top .timeline-box-title {
+      text-align: center; }
+  .timeline-box .timeline-box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid #e3a857;
+    position: relative; }
+    .timeline-box .timeline-box-bottom .timeline-box-dot {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: #646363;
+      border-radius: 15px;
+      border: 1px solid #afaeae;
+      position: absolute;
+      top: -8.5px;
+      left: 49%; }
+    .timeline-box .timeline-box-bottom .timeline-box-date {
+      text-align: center; }
+  .timeline-box .timeline-box-bottom.future {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid #d6dce0;
+    position: relative; }
+    .timeline-box .timeline-box-bottom.future .timeline-box-dot {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border-radius: 15px;
+      border: 1px solid #ddd;
+      position: absolute;
+      top: -8.5px;
+      left: 49%; }
+    .timeline-box .timeline-box-bottom.future .timeline-box-date {
+      text-align: center; }
 
 body {
   font-family: "Open Sans";

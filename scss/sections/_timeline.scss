@@ -1,0 +1,130 @@
+.timeline {
+  margin-top: 5%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-box {
+  height: 150px;
+  width: 100%;
+  .timeline-box-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66%;
+    width: 100%;
+    padding: 0 4%;
+    .timeline-box-title {
+      text-align: center;
+    }
+  }
+  .timeline-box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid $primary-color;
+    position: relative;
+    .timeline-box-dot {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: rgb(100, 99, 99);
+      border-radius: 15px;
+      border: 1px solid rgb(175, 174, 174);
+      position: absolute;
+      top: -8.5px;
+      left: 49%;
+    }
+    .timeline-box-date {
+      text-align: center;
+    }
+  }
+  .timeline-box-bottom.future {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    border-top: 2px solid #d6dce0;
+    position: relative;
+    .timeline-box-dot {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border-radius: 15px;
+      border: 1px solid #ddd;
+      position: absolute;
+      top: -8.5px;
+      left: 49%;
+    }
+    .timeline-box-date {
+      text-align: center;
+    }
+  }
+}
+
+// .timestamp {
+//   margin-bottom: 20px;
+//   padding: 0px 40px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   font-weight: 100;
+// }
+// .status {
+//   padding: 0px 40px;
+//   display: flex;
+//   justify-content: center;
+//   border-top: 2px solid #d6dce0;
+//   position: relative;
+//   transition: all 200ms ease-in;
+// }
+// h4 {
+//   font-weight: 600;
+//   &:before {
+//     content: "";
+//     width: 25px;
+//     height: 25px;
+//     background-color: black;
+//     border-radius: 25px;
+//     border: 1px solid #ddd;
+//     position: absolute;
+//     top: -15px;
+//     left: 42%;
+//     transition: all 200ms ease-in;
+//   }
+// }
+
+// .li.complete .status {
+//   border-top: 2px solid $primary-color;
+//   &:before {
+//     background-color: $primary-color;
+//     border: none;
+//     transition: all 200ms ease-in;
+//   }
+//   h4 {
+//     color: #66dc71;
+//   }
+// }
+
+// @media (min-device-width: 320px) and (max-device-width: 700px)
+//   .timeline
+//     list-style-type: none
+//     display: block
+//   .li
+//     transition: all 200ms ease-in
+//     display: flex
+//     width: inherit
+//   .timestamp
+//     width: 100px
+//   .status
+//     &:before
+//       left: -8%
+//       top: 30%
+//       transition: all 200ms ease-in

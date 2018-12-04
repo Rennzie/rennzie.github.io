@@ -10,14 +10,14 @@
 @import './sections/_projects';
 @import './sections/_current';
 @import './sections/_education';
+@import './sections/timeline';
 
-
-body{
+body {
   font-family: $primary-font;
   font-size: $text-heavy-font-size;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
