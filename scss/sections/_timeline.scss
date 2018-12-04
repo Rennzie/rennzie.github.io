@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.timeline-mobile {
+  display: none;
+}
+
 .timeline-box {
   height: 150px;
   width: 100%;
@@ -66,6 +70,15 @@
     .timeline-box-date {
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: $touch-max-width) {
+  .timeline {
+    display: none;
+  }
+  .timeline-mobile {
+    display: block;
   }
 }
 

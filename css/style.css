@@ -167,6 +167,9 @@ main {
 
 @media screen and (max-width: 800px) {
   .section-wrapper {
+    width: 100%; }
+
+  .section-wrapper-wide {
     width: 100%; } }
 footer {
   background-color: black;
@@ -338,6 +341,9 @@ footer {
   align-items: center;
   justify-content: center; }
 
+.timeline-mobile {
+  display: none; }
+
 .timeline-box {
   height: 150px;
   width: 100%; }
@@ -392,6 +398,12 @@ footer {
     .timeline-box .timeline-box-bottom.future .timeline-box-date {
       text-align: center; }
 
+@media screen and (max-width: 800px) {
+  .timeline {
+    display: none; }
+
+  .timeline-mobile {
+    display: block; } }
 body {
   font-family: "Open Sans";
   font-size: 18px; }
